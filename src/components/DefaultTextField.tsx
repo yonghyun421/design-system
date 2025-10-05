@@ -4,6 +4,7 @@ import ErrorMessage from "./ErrorMessage";
 import IconButton from "./IconButton";
 
 interface IDefaultTextFieldProps {
+  id: string;
   iconPath: string;
   iconAlt: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
@@ -15,6 +16,7 @@ interface IDefaultTextFieldProps {
 }
 
 export default function DefaultTextField({
+  id,
   iconPath,
   iconAlt,
   onChange,
@@ -31,7 +33,7 @@ export default function DefaultTextField({
     ? "border-mono300"
     : "border-primary";
   return (
-    <div>
+    <div className="relative">
       <div
         className={`text-primary border-b ${borderColor}`}
         onFocus={() => setIsFocused(true)}
@@ -39,6 +41,7 @@ export default function DefaultTextField({
       >
         <input
           type="text"
+          id={id}
           className="outline-none"
           placeholder={placeholder}
           value={value}

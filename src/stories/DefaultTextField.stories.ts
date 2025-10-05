@@ -12,6 +12,11 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
+    id: {
+      control: "text",
+      description: "텍스트 필드의 id",
+      defaultValue: "default-text-field",
+    },
     iconPath: {
       control: "text",
       description: "텍스트 필드의 아이콘 경로",
@@ -53,6 +58,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    id: "default-text-field",
     iconPath: "https://via:placeholder.com/24",
     iconAlt: "icon",
     onChange: fn(),

@@ -4,6 +4,16 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+@layer utilities {
+  .relative > p {
+    @apply absolute;
+  }
+
+  .navigation-title-wrapper > p {
+    @apply mr-2;
+  }
+}
+
 @theme {
   --color-primary: #1d2745;
   --color-secondary: #1de5d4;
