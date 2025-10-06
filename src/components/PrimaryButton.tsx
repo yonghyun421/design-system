@@ -30,7 +30,7 @@ export default function PrimaryButton({
     <button
       className={`w-full h-[59px] ${color[theme]} ${
         isDisabled ? disabled : ""
-      } rounded-primary-button`}
+      } rounded-default-button`}
       disabled={isDisabled}
       onClick={onClick}
     >

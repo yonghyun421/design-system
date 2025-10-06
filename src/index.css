@@ -49,7 +49,7 @@ body {
     font-weight: 700;
   }
 
-  .rounded-primary-button {
+  .rounded-default-button {
     @apply rounded-[5px];
   }
   .rounded-tag-button {
