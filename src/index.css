@@ -47,4 +47,8 @@ body {
     line-height: 36px;
     font-weight: 700;
   }
+
+  .rounded-primary-button {
+    @apply rounded-[5px];
+  }
 }
