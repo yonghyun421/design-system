@@ -39,6 +39,7 @@ export default defineConfig({
             ],
           },
           setupFiles: [".storybook/vitest.setup.ts"],
+          fileParallelism: false,
         },
       },
     ],
